@@ -55,6 +55,8 @@ const Name = styled.h1`
 
 
 
+
+
 const hero = (props) => (
 	<Container>
 		<Rectangle />

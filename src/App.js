@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout';
 import Home from './components/Pages/Home';
 
 class App extends Component {
+
 	render() {
 		const baseUrl = process.env.PUBLIC_URL;
 		

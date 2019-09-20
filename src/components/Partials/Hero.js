@@ -12,9 +12,12 @@ const Container = styled.div`
 	position: relative;
 	height: 435px;
 	overflow: hidden;
+	margin-bottom: 30px;
+	color: #FFFFFF;
 
 	@media (max-width: 576px) {
 		height: 175px;
+		margin-bottom: 0px;
 	}
 `;
 
@@ -94,7 +97,7 @@ const ResumeLink = styled.a`
 	 font-size: 25px;
 	 text-decoration: underline;
 	 font-family: 'Alegreya Sans',sans-serif;
-	 color: #000000;
+	 color: #FFFFFF;
 	 cursor: pointer;
 
 	 @media (max-width: 576px) {

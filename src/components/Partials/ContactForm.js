@@ -14,7 +14,11 @@ const SectionTitle = styled.h2`
 `;
 
 const sectionTitle = (props) => (
-	<SectionTitle>{props.title}</SectionTitle>	
+	<form method="POST" action="https://formspree.io/charleswrenk@gmail.com">
+		<input type="email" name="email" placeholder="Your email" />
+		<textarea name="message" placeholder="Write Me a Message"></textarea>
+		<button type="submit">Send Message</button>
+	</form>
 )
 
 export default sectionTitle;

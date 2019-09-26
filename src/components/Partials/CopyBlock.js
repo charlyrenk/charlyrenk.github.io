@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Copy = styled.p`	
 	font-size: 20px;
 	font-family: 'Alegreya Sans',sans-serif;
-	margin: 0;
+	margin: 5px 0;
 	color: #FFFFFF;
 	@media (max-width: 576px) {
 		font-size: 18px;

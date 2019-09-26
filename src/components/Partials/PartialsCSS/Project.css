@@ -1,0 +1,9 @@
+.OverlayClicked {
+	bottom: 0;
+	height: 100%;
+}
+
+.overlay {
+	bottom: 100%;
+	height: 0;
+}

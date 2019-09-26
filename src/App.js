@@ -4,6 +4,9 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Layout from './components/Layout/Layout';
 import Home from './components/Pages/Home';
 
+// Projects
+import Deadpool from './components/Pages/Projects/DeadpoolTinyHands'
+
 class App extends Component {
 
 	render() {
@@ -15,6 +18,11 @@ class App extends Component {
 					<Route exact path={baseUrl + "/"} render={props =>
 						<Fragment>
 							<Home />
+						</Fragment>
+					} />
+					<Route exact path={baseUrl + "/DeadpoolTinyHands"} render={props =>
+						<Fragment>
+							<Deadpool />
 						</Fragment>
 					} />
 				</BrowserRouter>

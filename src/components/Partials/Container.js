@@ -9,7 +9,7 @@ const Container = styled.div`
 	position: relative;
 	padding: 30px;
 	@media (max-width: 576px) {
-		padding: 15px 30px;
+		padding: 30px 30px 0;
 	} 
 `;
 

@@ -30,12 +30,11 @@ const beginnerBg = {
 }
 
 const skill = (props) => (
-	<Container className="col-6 col-sm-6 col-md-4 col-lg-3">
+	<Container className="col-12 col-sm-6 col-md-4 col-lg-3">
 		<SkillCard style={props.skillLevel === 'Excellent' ? excellentBg : props.skillLevel === 'Intermediate' ? intermediateBg: beginnerBg}>
 			<SkillName>{props.skillName}</SkillName>
 			<p>{props.skillLevel}</p>
-		</SkillCard>
-		
+		</SkillCard>	
 	</Container>
 )
 

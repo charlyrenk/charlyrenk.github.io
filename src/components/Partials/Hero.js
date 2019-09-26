@@ -61,27 +61,40 @@ const Image = styled.img`
 `;
 
 const Name = styled.h1`
-	 font-size: 45px;
+	 font-size: 90px;
 	 font-family: 'Alegreya Sans', sans-serif;
+	 margin: 0;
 
-	@media (max-width: 576px) { 
-		font-size: 27px;
-	 }
+	@media (max-width: 992px) { 
+		font-size: 60px;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 30px;
+	} 
 `;
 
 const Title = styled.p`
-	font-size: 35px;
-	line-height: 35px;
+	font-size: 50px;
+	line-height: 50px;
 	font-family: 'Alegreya Sans',sans-serif;
 	text-align: left;
-	width: 300px;
+	width: 435px;
+	margin: 0 0 10px 0;
 
-	@media (max-width: 576px) { 
+	@media (max-width: 992px) { 
+		font-size: 35px;
+		line-height: 35px;	
+		width: 350px;
+	}
+
+	@media (max-width: 576px) {
 		font-size: 20px;
 		line-height: 20px;
 		width: 200px;
 		margin: 0;
-	 }
+	} 
+
 `;
 
 
@@ -90,18 +103,24 @@ const LinkedIn = styled.a`
 `
 
 const LinkedInIcon = styled.img`
-	 width: 20px;
+	 width: 30px;
+	 margin-top: -5px;
+	 @media (max-width: 576px) {
+		width: 20px;
+		margin-top: -2px;
+	 } 
 `
 
 const ResumeLink = styled.a`
 	 font-size: 25px;
+	 line-height: 25px;
 	 text-decoration: underline;
 	 font-family: 'Alegreya Sans',sans-serif;
 	 color: #FFFFFF;
 	 cursor: pointer;
-
 	 @media (max-width: 576px) {
-		font-size: 20px;
+		font-size: 18px;
+		line-height: 18px;
 	 } 
 
 `

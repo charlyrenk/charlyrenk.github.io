@@ -5,7 +5,7 @@ const FormContainer = styled.div`
 	width: 100%;
 	max-width: 800px;
 	margin: auto;
-	padding: 10px 0;
+	padding: 10px 0 60vh 0;
 	text-align: center;
 
 `;

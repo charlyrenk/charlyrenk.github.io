@@ -17,23 +17,38 @@ const SkillName = styled.h3`
 	font-weight: bold;
 `
 
+const SkillLevel = styled.p`
+	font-family: 'Alegreya Sans',sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+`
+
+const Logo = styled.img`
+	height: 100px;
+`
 const excellentBg = {
-	background: '#6ba8e1',
+	background: '#2f82d0',
+	
 }
 
 const intermediateBg = {
-	background: '#99c0e4',
+	background: '#6ba8e1',
 }
 
 const beginnerBg = {
-	background: '#cce0f3',
+	background: '#99c0e4',
 }
 
 const skill = (props) => (
 	<Container className="col-12 col-sm-6 col-md-4 col-lg-3">
 		<SkillCard style={props.skillLevel === 'Excellent' ? excellentBg : props.skillLevel === 'Intermediate' ? intermediateBg: beginnerBg}>
 			<SkillName>{props.skillName}</SkillName>
-			<p>{props.skillLevel}</p>
+			{ props.logo
+        		? <Logo src={props.logo} alt={props.skillName}/>
+        		:  null
+      		}
+			<SkillLevel>{props.skillLevel}</SkillLevel>
 		</SkillCard>	
 	</Container>
 )

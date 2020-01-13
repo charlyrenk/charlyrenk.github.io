@@ -7,7 +7,7 @@ const Container = styled.div`
 	text-align: center;
 	font-family: 'Alegreya Sans',sans-serif;
 	color: #FFFFFF;
-	padding: 0 25px;
+	padding:  25px;
 
 	@media (max-width: 992px) {
 		padding: 15px 0;
@@ -100,10 +100,6 @@ const Layer = styled.div `
     width: 100%;
 	height: 100%;
 	padding: 20px;
-	:hover {
-		background-color: rgba(63, 66, 69, 0.8);
-		cursor: pointer;
-	}
 `
 const Overlay = styled.div `
 	position: absolute;
@@ -156,9 +152,9 @@ class Project extends Component {
 		return (
 			<Container className="col-12 col-lg-6">
 				<ProjectName>{this.props.projectName}</ProjectName>
-				<ProjectCard onClick={this.toggleProjectDetails}  style={{backgroundImage: 'url(' + this.props.backgroundImage + ')'}}>
+				<ProjectCard onClick={ (window.innerWidth < 768) ? this.toggleProjectDetails : null} onMouseEnter={ (window.innerWidth > 767) ? this.toggleProjectDetails : null} onMouseLeave={(window.innerWidth > 767) ? this.toggleProjectDetails : null}  style={{backgroundImage: 'url(' + this.props.backgroundImage + ')'}}>
 					<Layer>
-						<Overlay className = {this.state.active ? 'OverlayClicked overlayHover':  null} >
+						<Overlay className = {this.state.active ? 'OverlayClicked':  null} >
 						<AdditionalInfoBlock>
 								<ProjectTech>Tech: <br />{this.props.techUsed}</ProjectTech>
 						</AdditionalInfoBlock>

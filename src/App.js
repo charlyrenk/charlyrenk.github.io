@@ -5,7 +5,13 @@ import Layout from './components/Layout/Layout';
 import Home from './components/Pages/Home';
 
 // Projects
-import Deadpool from './components/Pages/Projects/DeadpoolTinyHands'
+import Deadpool from './components/Pages/Projects/DeadpoolTinyHands';
+import SOPA from './components/Pages/Projects/SocietyOfProadvisory';
+import TechTable from './components/Pages/Projects/CoxTechTable';
+import BillionDollarCommercial from './components/Pages/Projects/BillionDollarCommercial';
+
+
+
 
 class App extends Component {
 
@@ -23,6 +29,21 @@ class App extends Component {
 					<Route exact path={baseUrl + "/DeadpoolTinyHands"} render={props =>
 						<Fragment>
 							<Deadpool />
+						</Fragment>
+					} />
+					<Route exact path={baseUrl + "/SocietyOfProadvisory"} render={props =>
+						<Fragment>
+							<SOPA />
+						</Fragment>
+					} />
+					<Route exact path={baseUrl + "/CoxTechTable"} render={props =>
+						<Fragment>
+							<TechTable />
+						</Fragment>
+					} />
+					<Route exact path={baseUrl + "/BillionDollarCommercial"} render={props =>
+						<Fragment>
+							<BillionDollarCommercial />
 						</Fragment>
 					} />
 				</BrowserRouter>

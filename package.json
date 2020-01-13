@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react": "^16.8.6",
     "react-compare-image": "^1.3.0",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.3.0",
     "react-scroll": "^1.7.14",
     "styled-components": "^4.3.2"
   },
@@ -14,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,5 +45,5 @@
   },
   "author": "Charly Renk",
   "license": "ISC",
-  "homepage": "http://top-tech-table-jbl-extreme-2.s3-website-us-east-1.amazonaws.com"
+  "homepage": "http://charlyrenk.github.io/porfolio-in-react"
 }

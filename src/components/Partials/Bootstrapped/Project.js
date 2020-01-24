@@ -149,12 +149,16 @@ class Project extends Component {
 	};
 	
 	render() {
+		const overlayClicked = {
+			bottom: 0, 
+			height: '100%'
+		}
 		return (
 			<Container className="col-12 col-lg-6">
 				<ProjectName>{this.props.projectName}</ProjectName>
 				<ProjectCard onClick={ (window.innerWidth < 768) ? this.toggleProjectDetails : null} onMouseEnter={ (window.innerWidth > 767) ? this.toggleProjectDetails : null} onMouseLeave={(window.innerWidth > 767) ? this.toggleProjectDetails : null}  style={{backgroundImage: 'url(' + this.props.backgroundImage + ')'}}>
 					<Layer>
-						<Overlay className = {this.state.active ? 'OverlayClicked':  null} >
+						<Overlay style = {this.state.active ? overlayClicked :  null} >
 						<AdditionalInfoBlock>
 								<ProjectTech>Tech: <br />{this.props.techUsed}</ProjectTech>
 						</AdditionalInfoBlock>

@@ -20,7 +20,7 @@ class App extends Component {
 		
 		return (
 			<Layout>
-				<BrowserRouter>
+				<BrowserRouter basename="/">
 					<Route exact path={baseUrl + "/"} render={props =>
 						<Fragment>
 							<Home />

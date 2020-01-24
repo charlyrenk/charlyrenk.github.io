@@ -38,7 +38,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "devDependencies": {
-    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.3.0",
     "gh-pages": "^2.2.0"
   },
   "author": "Charly Renk",

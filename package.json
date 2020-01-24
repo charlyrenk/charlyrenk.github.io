@@ -1,8 +1,8 @@
 {
   "name": "charles-renk-portfolio",
   "version": "0.1.0",
-  "private": true, 
-  "homepage": "http://charlyrenk.github.io",
+  "private": true,
+  "homepage": "http://charlesrenk.com",
   "dependencies": {
     "gh-pages": "^2.2.0",
     "react": "^16.8.6",
@@ -45,5 +45,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/charlyrenk/charlyrenk.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlyrenk/porfolio-in-react.git"
   }
 }

@@ -2,7 +2,7 @@
   "name": "charles-renk-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://charlesrenk.com",
+  "homepage": "https://charlesrenk.com",
   "dependencies": {
     "gh-pages": "^2.2.0",
     "react": "^16.8.6",

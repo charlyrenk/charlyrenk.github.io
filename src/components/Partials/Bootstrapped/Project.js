@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import styled from 'styled-components';
 
 import '../PartialsCSS/Project.css';
@@ -113,29 +114,9 @@ const Overlay = styled.div `
 	transition: .5s ease;
 `
 
-const ProjectLink = styled.a`
-	text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: block;
-    padding: 5px;
-    width: 140px;
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 10px auto;
-	@media (max-width: 576px) {
-		font-size: 16px;
-	} 
-	:hover {
-		background: #c8b16a;
-		color: #FFFFFF;
-		text-decoration: none;
-	}
-`
-
-
 class Project extends Component {
+
+	
 
 	constructor(props) {
 		super(props);
@@ -167,7 +148,7 @@ class Project extends Component {
 				</ProjectCard>
 				<ProjectDescriptionBlock>
 					<ProjectDescription>{this.props.projectDescription} </ProjectDescription>
-					<ProjectLink href={this.props.link}> LEARN MORE</ProjectLink>
+					<Link className="Link" to={this.props.link}> LEARN MORE</Link>
 				</ProjectDescriptionBlock>
 			</Container>
 		)

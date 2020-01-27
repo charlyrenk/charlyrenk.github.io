@@ -6,6 +6,7 @@
   "dependencies": {
     "gh-pages": "^2.2.0",
     "react": "^16.8.6",
+    "react-scripts": "^3.3.0",
     "react-compare-image": "^1.3.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.1.2",
@@ -13,7 +14,6 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "react-scripts": "^3.3.0",
     "gh-pages": "^2.2.0"
   },
   "scripts": {
@@ -40,14 +40,6 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "author": "Charly Renk",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/charlyrenk/charlyrenk.github.io"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charlyrenk/porfolio-in-react.git"
-  }
+  "license": "ISC"
 }

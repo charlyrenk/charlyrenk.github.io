@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from "react-router-dom";
+import { createBrowserHistory } from 'history'
 
 import Layout from './components/Layout/Layout';
 import Home from './components/Pages/Home';
@@ -11,7 +12,16 @@ import TechTable from './components/Pages/Projects/CoxTechTable';
 import BillionDollarCommercial from './components/Pages/Projects/BillionDollarCommercial';
 
 
+const history = createBrowserHistory();
 
+history.listen(location => {
+  setTimeout(() => {
+    if (location.action === 'POP') {
+      return;
+    }
+    window.scrollTo(0, 0);
+  });
+});
 
 class App extends Component {
 
@@ -20,7 +30,7 @@ class App extends Component {
 		
 		return (
 			<Layout>
-				<HashRouter basename="/">
+				<HashRouter history={history} basename="/">
 					<Route exact path="/" component={Home} />
 					<Route path={"/DeadpoolTinyHands"} component={Deadpool}/>
 					<Route path={"/SocietyOfProadvisory"} component={SOPA}/>

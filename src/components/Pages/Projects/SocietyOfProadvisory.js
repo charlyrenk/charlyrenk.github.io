@@ -62,12 +62,12 @@ const sopa = () => (
 			<PhaseBlock className="col-12"><Link href="https://society-of-proadvisory.s3.amazonaws.com/about.html" target="_bank">View the Society</Link></PhaseBlock>
 		</BootstrapContainer>
 		<Container>
-			<CopyBlock>	At Periscope, I built a microsite promoting Minnesota Lottery's Billion Dollar Commerical campaign. The site was built into two phases: the first a countdown page, the second being the big reveal. 
+			<CopyBlock>	At Periscope, we built an illumanati/ secret-society themed site to promote Intuit's proadvisor program. The site features easter eggs, quizes, amazing designs, and more.
 			</CopyBlock>
-			<CopyBlock>	The microsite was hosted using WPEngine and had built-in script that switched the first phase to the second phase after the countdown reached zero. The site features many Vimeo embeds and required significant style changes for mobile screen sizes. 
+			<CopyBlock>	The microsite was hosted using WPEngine. The biggest challenge for this project was implenting its complicated designs in a short amount of time. We delegated tasks through SCRUM and Agile methodologies. Our styles were organized and compiled by SASS which helped tremendously during the collaboration process.
 			</CopyBlock>
 			<CopyBlock>
-					Tech used: HTML5 | CSS3 | SASS | Javascript | Jquery | Wordpress | WPEngine | PHP 
+				HTML5 | CSS3 | SASS | Javascript | Jquery | Wordpress | WPEngine | PHP 
 			</CopyBlock>
 		</Container>
 	</Body>

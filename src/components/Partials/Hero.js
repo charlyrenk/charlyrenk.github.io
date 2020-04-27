@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import charlyImg from '../../assets/images/charlyrenk-tuba.png';
 import linkedInIcon from '../../assets/images/linkedin.png';
+import resume from '../../assets/charles_renk_resume.pdf';
 
 const Container = styled.div`
 	width: 100%;
@@ -132,7 +133,7 @@ const hero = (props) => (
 		<CopyBlock>
 			<Name>{props.name}</Name>
 			<Title>{props.title}</Title>
-			<ResumeLink href="charlesrenkresume.pdf">Resume</ResumeLink>
+			<ResumeLink href={resume}>Resume</ResumeLink>
 			<LinkedIn target="_blank" href="https://www.linkedin.com/in/charles-renk-b90b3a69/">
 				<LinkedInIcon src={linkedInIcon} alt="LinkedIn"/>
 			</LinkedIn>

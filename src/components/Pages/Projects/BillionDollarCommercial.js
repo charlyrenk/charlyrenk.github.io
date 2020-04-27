@@ -74,12 +74,13 @@ const techTable = () => (
 			<PhaseBlock className="col-6"><Link href="https://billion-dollar-commercial.s3.amazonaws.com/videos-page.html" target="_bank">Phase Two: Commerical Reveal</Link></PhaseBlock>
 		</BootstrapContainer>
 		<Container>
-			<CopyBlock>At Periscope, we built a web app for Cox that featured a variety of speakers and headphones available in Cox stores. The web page was designed for Elo tablets. These tablets were set up at experiential tables that users would explore while prospecting different audio accessories.
+			<CopyBlock>	At Periscope, I built a microsite promoting Minnesota Lottery's Billion Dollar Commerical campaign.
+				The site was built into two phases: the first a countdown page, the second being the big reveal. 
 			</CopyBlock>
-			<CopyBlock>	We built the web app using React and styled our components using the Styled-Components library. Each unique tech table accessory had it's own collection of assets and s3 hosting page. Since the Tech Table app was used on Elo tablets, we had to host the s3 bucket links using <CopyLink href="https://us.moodmedia.com/">Mood Media</CopyLink>
+			<CopyBlock>	The microsite was hosted using WPEngine and had built-in script that switched the first phase to the second phase after the countdown reached zero. The site features many Vimeo embeds and required significant style changes for mobile screen sizes. 
 			</CopyBlock>
 			<CopyBlock>
-				Tech used: HTML5 | CSS3 | SASS | Javascript | jQuery | Wordpress | WPEngine | PHP | Photoshop
+					Tech used: HTML5 | CSS3 | SASS | Javascript | Jquery | Wordpress | WPEngine | PHP 
 			</CopyBlock>
 		</Container>
 	</Body>

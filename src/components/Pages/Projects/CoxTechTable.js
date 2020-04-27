@@ -68,13 +68,7 @@ const techTable = () => (
 		<Container>
 			<Hero src={techTableHero} alt="Cox Tech Table"/>
 		</Container>
-		<Directions>Select a Tech Table Product</Directions>
-		<BootstrapContainer>
-			<PhaseBlock className="col-6 col-sm-3"><Link href=" http://top-tech-table-jbl-charge-4.s3-website-us-east-1.amazonaws.com" target="_bank">JBL Charge 4</Link></PhaseBlock>
-			<PhaseBlock className="col-6 col-sm-3"><Link href="http://top-tech-table-jbl-clip-3.s3-website-us-east-1.amazonaws.com" target="_bank">JBL Clip 3</Link></PhaseBlock>
-			<PhaseBlock className="col-6 col-sm-3"><Link href="http://top-tech-table-harman-kardon-onyx-studio-5.s3-website-us-east-1.amazonaws.com" target="_bank">Onyx Studio 5</Link></PhaseBlock>
-			<PhaseBlock className="col-6 col-sm-3"><Link href="http://top-tech-table-jbl-live-650btnc.s3-website-us-east-1.amazonaws.com" target="_bank">JBL Live 650BTNC</Link></PhaseBlock>
-		</BootstrapContainer>
+
 		<Container>
 			<CopyBlock>At Periscope, we built a web app for Cox that featured a variety of speakers and headphones available in Cox stores. The web page was designed for Elo tablets. These tablets were set up at experiential tables that users would explore while prospecting different audio accessories.
 			</CopyBlock>
